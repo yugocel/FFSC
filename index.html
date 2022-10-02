@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="MIG">
+        <title>startside</title>
+        <link rel="stylesheet" href="Style/style.css">
+        <script type="text/javascript" src="Script/boardChooser.js"></script>
+        <script type="text/javascript" src="Script/artChooser.js"></script>
+        <script type="text/javascript" src="Script/quoteChooser.js"></script>
+        <script type="text/javascript" src="Script/searchEngine.js"></script>
+        <link rel="icon" href="Billeder/icon.png">
+    </head>
+
+    <body>
+
+        <section id="mainpage">
+
+            <div id="imageContainer">
+                <div id=imageDisplayer>
+                </div>
+                <div class="text-container">
+                    <p> Welcome back, <span class="highlight">Ronan</span></p>
+                </div>
+            </div>
+
+            <div id="link-boxes">
+                <div class="linkBox">
+                    <div>
+                        <p class=headerText>Browsing</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://github.com/yugocel/">github</a></li>
+                        <li><a href="https://www.twitter.com/">twitter</a></li>
+                        <li><a href="https://reddit.com/">reddit</a></li>
+                        <li><a href="https://stackexchange.com/">StackEx</a></li>
+                    </ul>
+                </div>
+                <div class="linkBox">
+                    <div>
+                        <p class=headerText>Media</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.youtube.com/">youtube</a></li>
+                        <li><a href="https://www.twitch.tv/">twitch</a></li>
+                        <li><a href="https://www.primevideo.com/">amazonprime</a></li>
+                        <li><a href="https://www.instagram.com/">insta</a></li>
+                    </ul>
+                </div>
+                <div class="linkBox">
+                    <div>
+                        <p class=headerText>Uni</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://webmail.th-brandenburg.de/#1">THB-Mail</a></li>
+                        <li><a href="https://moodle.th-brandenburg.de/">Moodle</a></li>
+                        <li><a href="https://informatik.th-brandenburg.de/Stundenplan/Plan.htm">Stundenplan</a></li>
+                        <li><a href="https://drive.google.com/drive/u/0/">drive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="searchBox">
+                <input id="searchbar" autocomplete="off" type="text" title="Search" autofocus onkeydown="search(event)" placeholder="">
+            </div>
+
+            <div id="quote-container">
+                <div class="text-container">
+                    <p id="quoteText">Imagination governs the world.</p>
+                </div>
+                <div class="text-container-quote">
+                    <p>~ <span id="quoteAuthor">Napoleon Boneparte</span></p>
+                </div>
+            </div>
+
+            <!-- Run scripts at the end, else they can't use the .html elements-->
+            <script>quotePicker()</script>
+            <script>artPicker()</script>
+            <script>boardPicker()</script>
+
+        </section>
+    </body>
+</html>
